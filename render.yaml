@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: spamblock
+    runtime: docker
+    plan: starter
+    healthCheckPath: /
+    envVars:
+      - key: TWILIO_ACCOUNT_SID
+        sync: false
+      - key: TWILIO_AUTH_TOKEN
+        sync: false
+      - key: STRIPE_SECRET_KEY
+        sync: false
+      - key: STRIPE_PRICE_ID
+        sync: false
+      - key: PUBLIC_URL
+        sync: false
+      - key: DATABASE_PATH
+        value: /var/data/spamblock.db
+    disk:
+      name: spamblock-data
+      mountPath: /var/data
+      sizeGB: 1

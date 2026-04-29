@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sign up — SpamBlock</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, sans-serif; background: #f8fafc; min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 20px; }
+  .card { background: white; border-radius: 12px; padding: 48px; max-width: 480px; width: 100%; box-shadow: 0 4px 24px rgba(0,0,0,0.08); }
+  h1 { font-size: 28px; margin-bottom: 8px; }
+  .sub { color: #64748b; margin-bottom: 32px; }
+  label { display: block; font-weight: 600; margin: 16px 0 6px; font-size: 14px; }
+  input { width: 100%; padding: 12px 14px; border: 1px solid #cbd5e1; border-radius: 8px; font-size: 15px; }
+  input:focus { outline: none; border-color: #10b981; }
+  .plan-pill { display: inline-block; background: #ecfdf5; color: #065f46; padding: 4px 12px; border-radius: 999px; font-size: 13px; font-weight: 600; }
+  button { width: 100%; background: #10b981; color: white; padding: 14px; border: none; border-radius: 8px; font-size: 16px; font-weight: 600; cursor: pointer; margin-top: 24px; }
+  button:hover { background: #059669; }
+  .note { color: #64748b; font-size: 13px; margin-top: 16px; text-align: center; }
+</style>
+</head>
+<body>
+<div class="card">
+  <h1>Start your free trial</h1>
+  <p class="sub">7 days free. <span class="plan-pill">{{ plan|capitalize }} plan — ${{ price }}/mo</span></p>
+  <form action="/signup" method="post">
+    <input type="hidden" name="plan" value="{{ plan }}">
+    <label>Business name</label>
+    <input name="name" required placeholder="Joe's Plumbing">
+    <label>Email</label>
+    <input name="email" type="email" required placeholder="you@business.com">
+    <label>Your real cell phone (we forward clean calls here)</label>
+    <input name="forward_to" required placeholder="+1 415 555 9999">
+    <button type="submit">Continue to payment →</button>
+  </form>
+  <p class="note">No charge for 7 days. Cancel anytime from your dashboard.</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SpamBlock — Stop spam calls before they ring your business</title>
+<meta name="description" content="AI-powered spam call blocker for small businesses. Junk calls die at the network. Real customers come straight through.">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #1a1a1a; line-height: 1.6; }
+  .hero { background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); color: white; padding: 100px 20px 80px; text-align: center; }
+  .hero h1 { font-size: 56px; max-width: 900px; margin: 0 auto 24px; line-height: 1.15; }
+  .hero p.lede { font-size: 22px; max-width: 700px; margin: 0 auto 40px; opacity: 0.9; }
+  .cta { display: inline-block; background: #10b981; color: white; padding: 18px 36px; font-size: 18px; font-weight: 600; border-radius: 8px; text-decoration: none; transition: transform 0.1s; }
+  .cta:hover { transform: translateY(-2px); }
+  .badge { display: inline-block; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); padding: 8px 16px; border-radius: 999px; font-size: 14px; margin-bottom: 24px; }
+
+  .stats { display: flex; justify-content: center; gap: 60px; padding: 60px 20px; background: #f8fafc; flex-wrap: wrap; }
+  .stat { text-align: center; }
+  .stat .num { font-size: 48px; font-weight: 700; color: #1e3a8a; }
+  .stat .lbl { font-size: 14px; color: #64748b; text-transform: uppercase; letter-spacing: 1px; }
+
+  .section { padding: 80px 20px; max-width: 1100px; margin: 0 auto; }
+  .section h2 { font-size: 40px; text-align: center; margin-bottom: 16px; }
+  .section .sub { text-align: center; font-size: 18px; color: #64748b; margin-bottom: 60px; }
+
+  .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px; }
+  .feature { padding: 32px; background: white; border: 1px solid #e2e8f0; border-radius: 12px; }
+  .feature .icon { font-size: 32px; margin-bottom: 16px; }
+  .feature h3 { font-size: 20px; margin-bottom: 8px; }
+  .feature p { color: #475569; }
+
+  .pricing { background: #f8fafc; padding: 80px 20px; }
+  .price-grid { max-width: 1000px; margin: 60px auto 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+  .plan { background: white; padding: 40px 32px; border-radius: 12px; border: 1px solid #e2e8f0; }
+  .plan.featured { border-color: #10b981; border-width: 2px; position: relative; }
+  .plan.featured::before { content: "MOST POPULAR"; position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: #10b981; color: white; padding: 4px 12px; border-radius: 999px; font-size: 11px; font-weight: 700; }
+  .plan h3 { font-size: 24px; margin-bottom: 8px; }
+  .plan .price { font-size: 48px; font-weight: 700; margin: 16px 0; }
+  .plan .price small { font-size: 16px; color: #64748b; font-weight: 400; }
+  .plan ul { list-style: none; margin: 24px 0; }
+  .plan li { padding: 8px 0; color: #475569; }
+  .plan li::before { content: "✓ "; color: #10b981; font-weight: 700; }
+  .plan .cta { width: 100%; text-align: center; }
+
+  footer { background: #0f172a; color: #94a3b8; padding: 40px 20px; text-align: center; font-size: 14px; }
+
+  @media (max-width: 640px) {
+    .hero h1 { font-size: 36px; }
+    .hero p.lede { font-size: 18px; }
+    .section h2 { font-size: 28px; }
+    .stats { gap: 30px; }
+  }
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="badge">🛡️ Trusted by small businesses across the US</div>
+  <h1>Stop spam calls before they ring your business.</h1>
+  <p class="lede">SpamBlock screens every incoming call against a database of 2M+ known spam numbers. Real customers come through. Junk dies at the network.</p>
+  <a href="#pricing" class="cta">Start free 7-day trial →</a>
+</section>
+
+<section class="stats">
+  <div class="stat"><div class="num">2M+</div><div class="lbl">Spam numbers blocked</div></div>
+  <div class="stat"><div class="num">94%</div><div class="lbl">Junk call accuracy</div></div>
+  <div class="stat"><div class="num">&lt;50ms</div><div class="lbl">Screening latency</div></div>
+  <div class="stat"><div class="num">24/7</div><div class="lbl">Always on</div></div>
+</section>
+
+<section class="section">
+  <h2>How it works</h2>
+  <p class="sub">3 steps. No app to install. Works with any phone.</p>
+  <div class="features">
+    <div class="feature">
+      <div class="icon">📞</div>
+      <h3>1. Get your business number</h3>
+      <p>We give you a clean US number. Put it on your website, Google listing, business cards.</p>
+    </div>
+    <div class="feature">
+      <div class="icon">🤖</div>
+      <h3>2. AI screens every call</h3>
+      <p>Each incoming call is checked against our spam database in milliseconds. Bad numbers get rejected automatically.</p>
+    </div>
+    <div class="feature">
+      <div class="icon">📲</div>
+      <h3>3. Real callers reach you</h3>
+      <p>Clean calls forward to your real cell phone. You never miss a customer. You never pick up another robocall.</p>
+    </div>
+  </div>
+</section>
+
+<section class="pricing" id="pricing">
+  <h2>Simple pricing. No contract.</h2>
+  <p class="sub">Cancel anytime. 7-day free trial on every plan.</p>
+  <div class="price-grid">
+
+    <div class="plan">
+      <h3>Solo</h3>
+      <div class="price">$29<small>/month</small></div>
+      <ul>
+        <li>1 business number</li>
+        <li>Unlimited screened calls</li>
+        <li>Voicemail + transcripts</li>
+        <li>Call log dashboard</li>
+        <li>Email support</li>
+      </ul>
+      <a href="/signup?plan=solo" class="cta">Start free trial</a>
+    </div>
+
+    <div class="plan featured">
+      <h3>Business</h3>
+      <div class="price">$79<small>/month</small></div>
+      <ul>
+        <li>3 business numbers</li>
+        <li>Unlimited screened calls</li>
+        <li>Custom block list</li>
+        <li>Whitelist VIP numbers</li>
+        <li>SMS + voicemail forwarding</li>
+        <li>Priority support</li>
+      </ul>
+      <a href="/signup?plan=business" class="cta">Start free trial</a>
+    </div>
+
+    <div class="plan">
+      <h3>Agency</h3>
+      <div class="price">$199<small>/month</small></div>
+      <ul>
+        <li>10 business numbers</li>
+        <li>Multi-location routing</li>
+        <li>Team dashboard</li>
+        <li>API access</li>
+        <li>Dedicated success manager</li>
+      </ul>
+      <a href="/signup?plan=agency" class="cta">Start free trial</a>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 SpamBlock. Built for small businesses tired of robocalls.</p>
+</footer>
+
+</body>
+</html>
